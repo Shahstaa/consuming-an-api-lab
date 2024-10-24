@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css"> 
+    <title>Weather Info</title>
+</head>
+<body>
+
+    <!-- 
+    {
+    "coord": {
+        "lon": -118.2479,
+        "lat": 33.9731
+    },
+    "weather": [
+        {
+            "id": 802,
+            "main": "Clouds",
+            "description": "scattered clouds",
+            "icon": "03n"
+        }
+    ],
+    "base": "stations",
+    "main": {
+        "temp": 64.49,
+        "feels_like": 65.07,
+        "temp_min": 60.46,
+        "temp_max": 70.7,
+        "pressure": 1014,
+        "humidity": 94,
+        "sea_level": 1014,
+        "grnd_level": 1009
+    },
+    "visibility": 10000,
+    "wind": {
+        "speed": 2.42,
+        "deg": 199,
+        "gust": 2.08
+    },
+    "clouds": {
+        "all": 37
+    },
+    "dt": 1729760029,
+    "sys": {
+        "type": 2,
+        "id": 2009636,
+        "country": "US",
+        "sunrise": 1729778749,
+        "sunset": 1729818487
+    },
+    "timezone": -25200,
+    "id": 0,
+    "name": "Los Angeles",
+    "cod": 200
+}
+    -->
+    <h1>Weather Information for</h1>
+    <p>City: <%= data.name %><strong></strong></p>
+    <p>Temperature: <%= data.main.temp %><strong>°F</strong></p>
+    <p>Description: <%= data.weather[0].description %><strong></strong></p>
+    <a href="/">Back to home!</a>
+</body>
+</html>
+
